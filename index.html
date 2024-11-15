@@ -17,7 +17,7 @@
             justify-content: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: xx-large;
-            height: 95vh;
+            height: 80vh;
         }
         body::-webkit-scrollbar {
             display: none;
@@ -26,9 +26,22 @@
             border: 5px solid black;
             background: lemonchiffon;
             padding: 20px;
-            font-size: 43px;
             border-radius: 15px;
         }
+        .clock {
+            font-size: 25px;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+        }
+        .clock-container {
+            background: lightgrey;
+        }
+        .clock {
+            font-size: 32px;
+        }
+}
     </style>
     <script>
         console.log("First Project");
